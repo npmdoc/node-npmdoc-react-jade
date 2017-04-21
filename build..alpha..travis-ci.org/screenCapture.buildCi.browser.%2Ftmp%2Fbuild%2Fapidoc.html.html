@@ -1,0 +1,1017 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>react-jade (v2.5.0)</a>
+</h1>
+<h4>Compile Jade to React JavaScript</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-jade">module react-jade</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.react-jade">
+            function <span class="apidocSignatureSpan"></span>react-jade
+            <span class="apidocSignatureSpan">(options, extra)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compile">
+            function <span class="apidocSignatureSpan">react-jade.</span>compile
+            <span class="apidocSignatureSpan">(str, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compileClient">
+            function <span class="apidocSignatureSpan">react-jade.</span>compileClient
+            <span class="apidocSignatureSpan">(str, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compileFile">
+            function <span class="apidocSignatureSpan">react-jade.</span>compileFile
+            <span class="apidocSignatureSpan">(filename, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compileFileClient">
+            function <span class="apidocSignatureSpan">react-jade.</span>compileFileClient
+            <span class="apidocSignatureSpan">(filename, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler">
+            function <span class="apidocSignatureSpan">react-jade.</span>compiler
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.java_script_compressor">
+            function <span class="apidocSignatureSpan">react-jade.</span>java_script_compressor
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-jade.</span>compiler.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-jade.</span>java_script_compressor.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-jade.compiler">module react-jade.compiler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.compiler">
+            function <span class="apidocSignatureSpan">react-jade.</span>compiler
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-jade.compiler.prototype">module react-jade.compiler.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.compile">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>compile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visit">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visit
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitBlock">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitBlock
+            <span class="apidocSignatureSpan">(block)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitBlockComment">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitBlockComment
+            <span class="apidocSignatureSpan">(comment)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitCode">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitCode
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitComment">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitComment
+            <span class="apidocSignatureSpan">(comment)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitEach">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitEach
+            <span class="apidocSignatureSpan">(each)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitLiteral">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitLiteral
+            <span class="apidocSignatureSpan">(literal)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitMixin">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitMixin
+            <span class="apidocSignatureSpan">(mixin)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitMixinBlock">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitMixinBlock
+            <span class="apidocSignatureSpan">(block)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitTag">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitTag
+            <span class="apidocSignatureSpan">(tag)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.compiler.prototype.visitText">
+            function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitText
+            <span class="apidocSignatureSpan">(text)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-jade.java_script_compressor">module react-jade.java_script_compressor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.java_script_compressor.java_script_compressor">
+            function <span class="apidocSignatureSpan">react-jade.</span>java_script_compressor
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-jade.java_script_compressor.prototype">module react-jade.java_script_compressor.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-jade.java_script_compressor.prototype.after">
+            function <span class="apidocSignatureSpan">react-jade.java_script_compressor.prototype.</span>after
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-jade" id="apidoc.module.react-jade">module react-jade</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.react-jade" id="apidoc.element.react-jade.react-jade">
+        function <span class="apidocSignatureSpan"></span>react-jade
+        <span class="apidocSignatureSpan">(options, extra)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function browserifySupport(options, extra) {
+  if (isTemplateLiteral(options)) {
+    return compile(options.raw[0]);
+  } else {
+    return browserify.apply(this, arguments);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compile" id="apidoc.element.react-jade.compile">
+        function <span class="apidocSignatureSpan">react-jade.</span>compile
+        <span class="apidocSignatureSpan">(str, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compile(str, options){
+  options = options || { filename: '' };
+  return Function('React', parse(str, options))(React);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Compile a jade file into a function that takes locals and returns a React DOM node.
+
+### jade.compileFileClient(filename, options)
+
+Compile a jade file into the source code for a function that takes locals and returns a React DOM node.  The result requires either
+ a global 'React' variable, or the ability to require 'React' as a CommonJS module.
+
+### jade.<span class="apidocCodeKeywordSpan">compile</span>(jadeString, options) =&gt; fn
+
+Same as `jade.compileFile` except you pass an inline jade string instead of a filename. You should set `options.filename` manually
+.
+
+### jade.compileClient(jadeString, options)
+
+Same as `jade.compileFileClient` except you pass an inline jade string instead of a filename. You should set `options.filename`
+manually.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compileClient" id="apidoc.element.react-jade.compileClient">
+        function <span class="apidocSignatureSpan">react-jade.</span>compileClient
+        <span class="apidocSignatureSpan">(str, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compileClient(str, options){
+  options = options || { filename: '' };
+  var react = options.outputFile ? path.relative(path.dirname(options.outputFile), reactRuntimePath) : reactRuntimePath;
+
+  if (options.globalReact || !reactRuntimePath) {
+    return '(function (React) {\n  ' +
+      parse(str, options).split('\n').join('\n  ') +
+      '\n}(React))';
+  } else {
+    return '(function (React) {\n  ' +
+      parse(str, options).split('\n').join('\n  ') +
+      '\n}(typeof React !== "undefined" ? React : require("' + react.replace(/^([^\.])/, './$1').replace(/\\/g, '/') + '")))';
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Compile a jade file into the source code for a function that takes locals and returns a React DOM node.  The result requires either
+ a global 'React' variable, or the ability to require 'React' as a CommonJS module.
+
+### jade.compile(jadeString, options) =&gt; fn
+
+Same as `jade.compileFile` except you pass an inline jade string instead of a filename. You should set `options.filename` manually
+.
+
+### jade.<span class="apidocCodeKeywordSpan">compileClient</span>(jadeString, options)
+
+Same as `jade.compileFileClient` except you pass an inline jade string instead of a filename. You should set `options.filename`
+manually.
+
+### template.locals(locals)
+
+You can set default `locals` values via the `template.locals` api.  e.g.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compileFile" id="apidoc.element.react-jade.compileFile">
+        function <span class="apidocSignatureSpan">react-jade.</span>compileFile
+        <span class="apidocSignatureSpan">(filename, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compileFile(filename, options) {
+  return Function('React', parseFile(filename, options))(React);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+If you are using browserify, just write a file that looks like the following, then use `react-jade` as a transform.  It will then
+ inline the result of calling `jade.compileFile` automatically.
+
+```js
+var React = require('react');
+var jade = require('react-jade');
+
+var template = jade.<span class="apidocCodeKeywordSpan">compileFile</span>(__dirname + '/template.jade');
+
+React.render(template({local: 'values'}), document.getElementById('container'));
+```
+
+```
+browserify index.js --transform react-jade &gt; bundle.js
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compileFileClient" id="apidoc.element.react-jade.compileFileClient">
+        function <span class="apidocSignatureSpan">react-jade.</span>compileFileClient
+        <span class="apidocSignatureSpan">(filename, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function compileFileClient(filename, options) {
+  var str = fs.readFileSync(filename, 'utf8').toString();
+  var options = options || {};
+  options.filename = path.resolve(filename);
+  return compileClient(str, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+If you are not using browserify, you could manually compile the jade to some client file.  e.g.
+
+```js
+var fs = require('fs');
+var jade = require('react-jade');
+
+fs.writeFileSync(__dirname + '/template.js', 'var template = ' + jade.<span class="apidocCodeKeywordSpan">compileFileClient
+</span>(__dirname + '/template.jade'));
+```
+
+Then on your html page:
+
+```html
+&lt;div id="container"&gt;&lt;/div&gt;
+&lt;script src="http://fb.me/react-0.12.2.js"&gt;&lt;/script&gt;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler" id="apidoc.element.react-jade.compiler">
+        function <span class="apidocSignatureSpan">react-jade.</span>compiler
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Compiler(node) {
+  this.node = node;
+  this.mixins = {};
+  this.dynamicMixins = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.java_script_compressor" id="apidoc.element.react-jade.java_script_compressor">
+        function <span class="apidocSignatureSpan">react-jade.</span>java_script_compressor
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Compressor(options) {
+  uglify.TreeTransformer.call(this, this.before, this.after);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-jade.compiler" id="apidoc.module.react-jade.compiler">module react-jade.compiler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.compiler" id="apidoc.element.react-jade.compiler.compiler">
+        function <span class="apidocSignatureSpan">react-jade.</span>compiler
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Compiler(node) {
+  this.node = node;
+  this.mixins = {};
+  this.dynamicMixins = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-jade.compiler.prototype" id="apidoc.module.react-jade.compiler.prototype">module react-jade.compiler.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.compile" id="apidoc.element.react-jade.compiler.prototype.compile">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>compile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compile = function (){
+  this.buf = [];
+  this.visit(this.node);
+
+  if (!this.dynamicMixins) {
+    // if there are no dynamic mixins we can remove any un-used mixins
+    var mixinNames = Object.keys(this.mixins);
+    for (var i = 0; i &lt; mixinNames.length; i++) {
+      var mixin = this.mixins[mixinNames[i]];
+      if (!mixin.used) {
+        for (var x = 0; x &lt; mixin.instances.length; x++) {
+          for (var y = mixin.instances[x].start; y &lt; mixin.instances[x].end; y++) {
+            this.buf[y] = '';
+          }
+        }
+      }
+    }
+  }
+  return this.buf.join('\n');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Compile a jade file into a function that takes locals and returns a React DOM node.
+
+### jade.compileFileClient(filename, options)
+
+Compile a jade file into the source code for a function that takes locals and returns a React DOM node.  The result requires either
+ a global 'React' variable, or the ability to require 'React' as a CommonJS module.
+
+### jade.<span class="apidocCodeKeywordSpan">compile</span>(jadeString, options) =&gt; fn
+
+Same as `jade.compileFile` except you pass an inline jade string instead of a filename. You should set `options.filename` manually
+.
+
+### jade.compileClient(jadeString, options)
+
+Same as `jade.compileFileClient` except you pass an inline jade string instead of a filename. You should set `options.filename`
+manually.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visit" id="apidoc.element.react-jade.compiler.prototype.visit">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visit
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visit = function (node){
+  if (typeof this['visit' + node.type] !== 'function') {
+    throw new Error(node.type + ' is not supported');
+  }
+  return this['visit' + node.type](node);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this.node = node;
+this.mixins = {};
+this.dynamicMixins = false;
+}
+
+Compiler.prototype.compile = function(){
+this.buf = [];
+this.<span class="apidocCodeKeywordSpan">visit</span>(this.node);
+
+if (!this.dynamicMixins) {
+  // if there are no dynamic mixins we can remove any un-used mixins
+  var mixinNames = Object.keys(this.mixins);
+  for (var i = 0; i &lt; mixinNames.length; i++) {
+    var mixin = this.mixins[mixinNames[i]];
+    if (!mixin.used) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitBlock" id="apidoc.element.react-jade.compiler.prototype.visitBlock">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitBlock
+        <span class="apidocSignatureSpan">(block)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitBlock = function (block){
+  for (var i = 0; i &lt; block.nodes.length; i++) {
+    this.visit(block.nodes[i]);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitBlockComment" id="apidoc.element.react-jade.compiler.prototype.visitBlockComment">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitBlockComment
+        <span class="apidocSignatureSpan">(comment)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitBlockComment = function (comment) {
+  this.buf.push('/*');
+  this.buf.push(comment.val);
+  this.visit(comment.block);
+  this.buf.push('*/');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitCode" id="apidoc.element.react-jade.compiler.prototype.visitCode">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitCode
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitCode = function (code) {
+  if (code.block &amp;&amp; code.buffer) {
+    throw new Error('Not Implemented');
+  }
+  if (code.buffer &amp;&amp; !code.escape) {
+    this.buf.push('tags.push(React.createElement("div", {dangerouslySetInnerHTML:{__html: ' + code.val + '}}))');
+  } else if (code.buffer) {
+    this.buf.push('tags.push(' + code.val + ')');
+  } else {
+    this.buf.push(code.val);
+    if (code.block) {
+      this.buf.push('{');
+      this.visit(code.block);
+      this.buf.push('}');
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  attrs = 'jade_fix_attrs(jade_merge([' + getAttributes(tag.attrs) + ',' + tag.attributeBlocks.join(',&amp;#
+x27;) + ']))';
+} else {
+  attrs = getAttributes(tag.attrs, true);
+}
+this.buf.push(',' + attrs + ']');
+if (tag.code || (tag.block &amp;&amp; tag.block.nodes.length)) {
+  this.buf.push('.concat(function () { var tags = [];');
+  if (tag.code) this.<span class="apidocCodeKeywordSpan">visitCode</span>(tag.code);
+  this.visit(tag.block);
+  this.buf.push('return tags;}.call(this))');
+}
+this.buf.push('))');
+};
+Compiler.prototype.visitText = function (text) {
+if (/[&lt;&gt;&amp;]/.test(text.val.replace(/&amp;((#\d+)|#[xX]([A-Fa-f0-9]+)|([^;\W]+));?/g, ''))) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitComment" id="apidoc.element.react-jade.compiler.prototype.visitComment">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitComment
+        <span class="apidocSignatureSpan">(comment)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitComment = function (comment) {
+  this.buf.push('\n//' + comment.val + '\n');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitEach" id="apidoc.element.react-jade.compiler.prototype.visitEach">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitEach
+        <span class="apidocSignatureSpan">(each)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitEach = function (each) {
+  this.buf.push(''
+    + '// iterate ' + each.obj + '\n'
+    + ';tags.push(function(){\n'
+    + '  var tags = [];\n'
+    + '  var $$obj = ' + each.obj + ';\n'
+    + '  if (\'number\' == typeof $$obj.length) {\n');
+
+  if (each.alternative) {
+    this.buf.push('  if ($$obj.length) {');
+  }
+
+  this.buf.push('for (var ' + each.key + ' = 0, $$l = $$obj.length; ' + each.key + ' &lt; $$l; ' + each.key + '++) {\n'
+    + 'var ' + each.val + ' = $$obj[' + each.key + '];\n');
+
+  this.visit(each.block);
+  this.buf.push('}');
+
+  if (each.alternative) {
+    this.buf.push('  } else {');
+    this.visit(each.alternative);
+    this.buf.push('  }');
+  }
+
+  this.buf.push(''
+    + '  } else {\n'
+    + '    var $$l = 0;\n'
+    + '    for (var ' + each.key + ' in $$obj) {\n'
+    + '      $$l++;'
+    + '      var ' + each.val + ' = $$obj[' + each.key + '];\n');
+
+  this.visit(each.block);
+  this.buf.push('}');
+
+  if (each.alternative) {
+    this.buf.push('if ($$l === 0) {');
+    this.visit(each.alternative);
+    this.buf.push('}');
+  }
+
+  this.buf.push('}');
+
+  this.buf.push('return tags;');
+  this.buf.push('}.call(this));');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitLiteral" id="apidoc.element.react-jade.compiler.prototype.visitLiteral">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitLiteral
+        <span class="apidocSignatureSpan">(literal)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitLiteral = function (literal) {
+  if (/[&lt;&gt;&amp;]/.test(literal.str)) {
+    throw new Error('Plain Text cannot contain "&lt;" or "&gt;" or "&amp;" in react-jade');
+  } else if (literal.str.length !== 0) {
+    this.buf.push('tags.push(' + stringify(literal.str) + ')');
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitMixin" id="apidoc.element.react-jade.compiler.prototype.visitMixin">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitMixin
+        <span class="apidocSignatureSpan">(mixin)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitMixin = function (mixin) {
+    var name = 'jade_mixins[';
+    var args = mixin.args || '';
+    var block = mixin.block;
+    var attrs = mixin.attrs;
+    var attrsBlocks = mixin.attributeBlocks;
+    var pp = this.pp;
+    var dynamic = mixin.name[0]==='#';
+    var key = mixin.name;
+    if (dynamic) this.dynamicMixins = true;
+    name += (dynamic ? mixin.name.substr(2,mixin.name.length-3):'"'+mixin.name+'"')+']';
+
+    this.mixins[key] = this.mixins[key] || {used: false, instances: []};
+    if (mixin.call) {
+      this.mixins[key].used = true;
+      //if (pp) this.buf.push("jade_indent.push('" + Array(this.indents + 1).join('  ') + "');")
+      if (block || attrs.length || attrsBlocks.length) {
+
+        this.buf.push('tags = tags.concat(' + name + '.call(this, {');
+
+        if (block) {
+          this.buf.push('block: function(){');
+          this.buf.push('var tags = [];');
+          // Render block with no indents, dynamically added when rendered
+          this.visit(mixin.block);
+          this.buf.push('return tags;');
+
+          if (attrs.length || attrsBlocks.length) {
+            this.buf.push('},');
+          } else {
+            this.buf.push('}');
+          }
+        }
+
+        if (attrsBlocks.length) {
+          if (attrs.length) {
+            var val = getAttributes(attrs);
+            attrsBlocks.unshift(val);
+          }
+          this.buf.push('attributes: jade_merge([' + attrsBlocks.join(',') + '])');
+        } else if (attrs.length) {
+          var val = getAttributes(attrs);
+          this.buf.push('attributes: ' + val);
+        }
+
+        if (args) {
+          this.buf.push('}, ' + args + '));');
+        } else {
+          this.buf.push('}));');
+        }
+
+      } else {
+        this.buf.push('tags = tags.concat(' + name + '.call(this, {}');
+        if (args) {
+          this.buf.push(', ' + args + '));');
+        } else {
+          this.buf.push('));');
+        }
+      }
+    } else {
+      var mixin_start = this.buf.length;
+      args = args ? args.split(',') : [];
+      var rest;
+      if (args.length &amp;&amp; /^\.\.\./.test(args[args.length - 1].trim())) {
+        rest = args.pop().trim().replace(/^\.\.\./, '');
+      }
+      this.buf.push(name + ' = function(jade_mixin_options');
+      if (args.length) this.buf.push(',' + args.join(','));
+      this.buf.push('){');
+      this.buf.push('var block = (jade_mixin_options &amp;&amp; jade_mixin_options.block), attributes = (jade_mixin_options &amp;&amp; jade_mixin_options
+.attributes) || {};');
+      if (rest) {
+        this.buf.push('var ' + rest + ' = [];');
+        this.buf.push('for (jade_interp = ' + (args.length + 1) + '; jade_interp &lt; arguments.length; jade_interp++) {');
+        this.buf.push('  ' + rest + '.push(arguments[jade_interp]);');
+        this.buf.push('}');
+      }
+      this.buf.push('var tags = [];');
+      this.visit(block);
+      this.buf.push('return tags;');
+      this.buf.push('};');
+      var mixin_end = this.buf.length;
+      this.mixins[key].instances.push({start: mixin_start, end: mixin_end});
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitMixinBlock" id="apidoc.element.react-jade.compiler.prototype.visitMixinBlock">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitMixinBlock
+        <span class="apidocSignatureSpan">(block)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitMixinBlock = function (block){
+    this.buf.push('block &amp;&amp; (tags = tags.concat(block.call(this)));');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitTag" id="apidoc.element.react-jade.compiler.prototype.visitTag">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitTag
+        <span class="apidocSignatureSpan">(tag)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitTag = function (tag) {
+  var name = tag.name;
+  if (/^[a-z]/.test(tag.name) &amp;&amp; !tag.buffer) {
+    name = '"' + name + '"';
+  }
+  this.buf.push('tags.push(React.createElement.apply(React, ['+name);
+
+
+  if (tag.name === 'textarea' &amp;&amp; tag.code &amp;&amp; tag.code.buffer &amp;&amp; tag.code.escape) {
+    tag.attrs.push({
+      name: 'value',
+      val: tag.code.val
+    });
+    tag.code = null;
+  }
+  var attrs;
+  if (tag.attributeBlocks.length) {
+    attrs = 'jade_fix_attrs(jade_merge([' + getAttributes(tag.attrs) + ',' + tag.attributeBlocks.join(',') + ']))';
+  } else {
+    attrs = getAttributes(tag.attrs, true);
+  }
+  this.buf.push(',' + attrs + ']');
+  if (tag.code || (tag.block &amp;&amp; tag.block.nodes.length)) {
+    this.buf.push('.concat(function () { var tags = [];');
+    if (tag.code) this.visitCode(tag.code);
+    this.visit(tag.block);
+    this.buf.push('return tags;}.call(this))');
+  }
+  this.buf.push('))');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.compiler.prototype.visitText" id="apidoc.element.react-jade.compiler.prototype.visitText">
+        function <span class="apidocSignatureSpan">react-jade.compiler.prototype.</span>visitText
+        <span class="apidocSignatureSpan">(text)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitText = function (text) {
+  if (/[&lt;&gt;&amp;]/.test(text.val.replace(/&amp;((#\d+)|#[xX]([A-Fa-f0-9]+)|([^;\W]+));?/g, ''))) {
+    throw new Error('Plain Text cannot contain "&lt;" or "&gt;" or "&amp;" in react-jade');
+  } else if (text.val.length !== 0) {
+    text.val = ent.decode(text.val);
+    this.buf.push('tags.push(' + stringify(text.val) + ')');
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-jade.java_script_compressor" id="apidoc.module.react-jade.java_script_compressor">module react-jade.java_script_compressor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.java_script_compressor.java_script_compressor" id="apidoc.element.react-jade.java_script_compressor.java_script_compressor">
+        function <span class="apidocSignatureSpan">react-jade.</span>java_script_compressor
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Compressor(options) {
+  uglify.TreeTransformer.call(this, this.before, this.after);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-jade.java_script_compressor.prototype" id="apidoc.module.react-jade.java_script_compressor.prototype">module react-jade.java_script_compressor.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-jade.java_script_compressor.prototype.after" id="apidoc.element.react-jade.java_script_compressor.prototype.after">
+        function <span class="apidocSignatureSpan">react-jade.java_script_compressor.prototype.</span>after
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">after = function (node) {
+  if (isVacuousFunction(node)) {
+    var fn = node.expression.expression;
+    if (fn.body.length &gt; 0 &amp;&amp; fn.body[0].TYPE === 'Return') {
+      return fn.body[0].value;
+    }
+  }
+  if (node.TYPE === 'Function') {
+    var returnStatement = getReturnStatement(node);
+    if (returnStatement) {
+      node.body = [returnStatement];
+      return node;
+    }
+  }
+  if (isConcattedArray(node)) {
+    node.expression.expression.elements = node.expression.expression.elements
+      .concat(node.args[0].elements);
+    return node.expression.expression;
+  }
+
+  if (isConstantApply(node)) {
+    node.expression = node.expression.expression;
+    node.args = node.args[1].elements;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>

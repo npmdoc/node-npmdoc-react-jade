@@ -1,0 +1,94 @@
+<svg height="1454" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1454" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">14 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">├── UNMET PEER DEPENDENCY react@&gt;=0.12.0 &lt;0.15.0</tspan>
+<tspan x="10" y="90">└─┬ react-jade@2.5.0 </tspan>
+<tspan x="10" y="106">  ├── acorn@1.2.2 </tspan>
+<tspan x="10" y="122">  ├─┬ constantinople@3.1.0 </tspan>
+<tspan x="10" y="138">  │ ├── acorn@3.3.0 </tspan>
+<tspan x="10" y="154">  │ └─┬ is-expression@2.1.0 </tspan>
+<tspan x="10" y="170">  │   ├── acorn@3.3.0 </tspan>
+<tspan x="10" y="186">  │   └── object-assign@4.1.1 </tspan>
+<tspan x="10" y="202">  ├── ent@2.2.0 </tspan>
+<tspan x="10" y="218">  ├─┬ jade@1.9.2 </tspan>
+<tspan x="10" y="234">  │ ├── character-parser@1.2.1 </tspan>
+<tspan x="10" y="250">  │ ├── commander@2.6.0 </tspan>
+<tspan x="10" y="266">  │ ├─┬ constantinople@3.0.2 </tspan>
+<tspan x="10" y="282">  │ │ └── acorn@2.7.0 </tspan>
+<tspan x="10" y="298">  │ ├─┬ mkdirp@0.5.1 </tspan>
+<tspan x="10" y="314">  │ │ └── minimist@0.0.8 </tspan>
+<tspan x="10" y="330">  │ ├─┬ transformers@2.1.0 </tspan>
+<tspan x="10" y="346">  │ │ ├─┬ css@1.0.8 </tspan>
+<tspan x="10" y="362">  │ │ │ ├── css-parse@1.0.4 </tspan>
+<tspan x="10" y="378">  │ │ │ └── css-stringify@1.0.5 </tspan>
+<tspan x="10" y="394">  │ │ ├─┬ promise@2.0.0 </tspan>
+<tspan x="10" y="410">  │ │ │ └── is-promise@1.0.1 </tspan>
+<tspan x="10" y="426">  │ │ └─┬ uglify-js@2.2.5 </tspan>
+<tspan x="10" y="442">  │ │   └─┬ optimist@0.3.7 </tspan>
+<tspan x="10" y="458">  │ │     └── wordwrap@0.0.3 </tspan>
+<tspan x="10" y="474">  │ ├── void-elements@2.0.1 </tspan>
+<tspan x="10" y="490">  │ └─┬ with@4.0.3 </tspan>
+<tspan x="10" y="506">  │   ├── acorn@1.2.2 </tspan>
+<tspan x="10" y="522">  │   └─┬ acorn-globals@1.0.9 </tspan>
+<tspan x="10" y="538">  │     └── acorn@2.7.0 </tspan>
+<tspan x="10" y="554">  ├── js-stringify@1.0.2 </tspan>
+<tspan x="10" y="570">  ├─┬ resolve@1.3.3 </tspan>
+<tspan x="10" y="586">  │ └── path-parse@1.0.5 </tspan>
+<tspan x="10" y="602">  ├─┬ static-module@1.3.1 </tspan>
+<tspan x="10" y="618">  │ ├─┬ concat-stream@1.4.10 </tspan>
+<tspan x="10" y="634">  │ │ ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="650">  │ │ ├── readable-stream@1.1.14 </tspan>
+<tspan x="10" y="666">  │ │ └── typedarray@0.0.6 </tspan>
+<tspan x="10" y="682">  │ ├─┬ duplexer2@0.0.2 </tspan>
+<tspan x="10" y="698">  │ │ └── readable-stream@1.1.14 </tspan>
+<tspan x="10" y="714">  │ ├─┬ escodegen@1.3.3 </tspan>
+<tspan x="10" y="730">  │ │ ├── esprima@1.1.1 </tspan>
+<tspan x="10" y="746">  │ │ ├── estraverse@1.5.1 </tspan>
+<tspan x="10" y="762">  │ │ ├── esutils@1.0.0 </tspan>
+<tspan x="10" y="778">  │ │ └─┬ source-map@0.1.43 </tspan>
+<tspan x="10" y="794">  │ │   └── amdefine@1.0.1 </tspan>
+<tspan x="10" y="810">  │ ├─┬ falafel@1.2.0 </tspan>
+<tspan x="10" y="826">  │ │ ├── foreach@2.0.5 </tspan>
+<tspan x="10" y="842">  │ │ ├── isarray@0.0.1 </tspan>
+<tspan x="10" y="858">  │ │ └── object-keys@1.0.11 </tspan>
+<tspan x="10" y="874">  │ ├─┬ has@1.0.1 </tspan>
+<tspan x="10" y="890">  │ │ └── function-bind@1.1.0 </tspan>
+<tspan x="10" y="906">  │ ├── object-inspect@0.4.0 </tspan>
+<tspan x="10" y="922">  │ ├── quote-stream@0.0.0 </tspan>
+<tspan x="10" y="938">  │ ├─┬ readable-stream@1.0.34 </tspan>
+<tspan x="10" y="954">  │ │ ├── core-util-is@1.0.2 </tspan>
+<tspan x="10" y="970">  │ │ └── string_decoder@0.10.31 </tspan>
+<tspan x="10" y="986">  │ ├── shallow-copy@0.0.1 </tspan>
+<tspan x="10" y="1002">  │ ├─┬ static-eval@0.2.4 </tspan>
+<tspan x="10" y="1018">  │ │ └─┬ escodegen@0.0.28 </tspan>
+<tspan x="10" y="1034">  │ │   ├── esprima@1.0.4 </tspan>
+<tspan x="10" y="1050">  │ │   └── estraverse@1.3.2 </tspan>
+<tspan x="10" y="1066">  │ └─┬ through2@0.4.2 </tspan>
+<tspan x="10" y="1082">  │   └─┬ xtend@2.1.2 </tspan>
+<tspan x="10" y="1098">  │     └── object-keys@0.4.0 </tspan>
+<tspan x="10" y="1114">  ├─┬ uglify-js@2.8.22 </tspan>
+<tspan x="10" y="1130">  │ ├── source-map@0.5.6 </tspan>
+<tspan x="10" y="1146">  │ ├── uglify-to-browserify@1.0.2 </tspan>
+<tspan x="10" y="1162">  │ └─┬ yargs@3.10.0 </tspan>
+<tspan x="10" y="1178">  │   ├── camelcase@1.2.1 </tspan>
+<tspan x="10" y="1194">  │   ├─┬ cliui@2.1.0 </tspan>
+<tspan x="10" y="1210">  │   │ ├─┬ center-align@0.1.3 </tspan>
+<tspan x="10" y="1226">  │   │ │ ├─┬ align-text@0.1.4 </tspan>
+<tspan x="10" y="1242">  │   │ │ │ ├─┬ kind-of@3.1.0 </tspan>
+<tspan x="10" y="1258">  │   │ │ │ │ └── is-buffer@1.1.5 </tspan>
+<tspan x="10" y="1274">  │   │ │ │ ├── longest@1.0.1 </tspan>
+<tspan x="10" y="1290">  │   │ │ │ └── repeat-string@1.6.1 </tspan>
+<tspan x="10" y="1306">  │   │ │ └── lazy-cache@1.0.4 </tspan>
+<tspan x="10" y="1322">  │   │ ├── right-align@0.1.3 </tspan>
+<tspan x="10" y="1338">  │   │ └── wordwrap@0.0.2 </tspan>
+<tspan x="10" y="1354">  │   ├── decamelize@1.2.0 </tspan>
+<tspan x="10" y="1370">  │   └── window-size@0.1.0 </tspan>
+<tspan x="10" y="1386">  └─┬ with@5.1.1 </tspan>
+<tspan x="10" y="1402">    ├── acorn@3.3.0 </tspan>
+<tspan x="10" y="1418">    └─┬ acorn-globals@3.1.0 </tspan>
+<tspan x="10" y="1434">      └── acorn@4.0.11</tspan>
+</text>
+</svg>
